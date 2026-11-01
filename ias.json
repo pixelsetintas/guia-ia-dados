@@ -172,9 +172,9 @@
       "resumo": "Especialista em imagens com TEXTO legível: logos, cartazes, convites e camisetas.",
       "comoUsar": ["Acesse ideogram.ai", "Escreva o texto entre aspas no pedido", "Escolha a proporção e gere"],
       "fortes": ["Escreve textos certinhos nas imagens", "Bom para logos e cartazes"],
-      "limites": ["Grátis com poucos pedidos por dia", "Preços variam: confira no site"],
+      "limites": ["Grátis com só 30 créditos por semana", "No grátis as imagens ficam públicas"],
       "tags": ["imagem", "design", "gratis"],
-      "planos": [{"nome": "Grátis", "brl": 0, "obs": "Poucos pedidos por dia"}, {"nome": "Basic", "usd": 7, "obs": "Planos maiores a partir de ~US$ 16"}],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "30 créditos por semana; imagens ficam públicas"}, {"nome": "Plus", "usd": 20, "obs": "US$ 15/mês no plano anual"}, {"nome": "Pro", "usd": 60, "obs": "US$ 42/mês no plano anual"}],
       "prompts": ["Convite de aniversário com o texto \"Festa do Pedro - 10 anos\", estilo festa junina."]
     },
     {
@@ -218,7 +218,7 @@
       "fortes": ["Vídeos realistas", "Planos baratos"],
       "limites": ["Fila de espera no plano grátis", "Créditos grátis podem mudar"],
       "tags": ["video"],
-      "planos": [{"nome": "Grátis", "brl": 0, "obs": "Créditos limitados (verifique)"}, {"nome": "Standard", "usd": 10}, {"nome": "Pro", "usd": 37}, {"nome": "Premier", "usd": 182}],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "Créditos limitados (verifique)"}, {"nome": "Standard", "usd": 10}, {"nome": "Pro", "usd": 37}, {"nome": "Premier", "usd": 182, "obs": "Fontes divergem entre US$ 92 e US$ 182 (verifique)"}],
       "prompts": ["Anime esta foto antiga da família, com as pessoas sorrindo e acenando."]
     },
     {
