@@ -1,0 +1,313 @@
+{
+  "versao": 1,
+  "atualizado": "2026-11-01",
+  "cotacaoReserva": 5.44,
+  "iof": 0.035,
+  "aviso": "Preços conferidos em 01/11/2026 em páginas oficiais e guias de preços. Valores em US$ são convertidos pela cotação do dia + IOF de 3,5% (cartão internacional). Confirme no site oficial antes de assinar.",
+  "categorias": [
+    {"id": "chat", "nome": "Assistentes de conversa", "icone": "💬"},
+    {"id": "pesquisa", "nome": "Pesquisa e estudo", "icone": "🔎"},
+    {"id": "imagem", "nome": "Imagens e design", "icone": "🎨"},
+    {"id": "video", "nome": "Vídeo", "icone": "🎬"},
+    {"id": "audio", "nome": "Música e voz", "icone": "🎵"},
+    {"id": "codigo", "nome": "Programação", "icone": "💻"}
+  ],
+  "ias": [
+    {
+      "id": "chatgpt", "nome": "ChatGPT", "empresa": "OpenAI", "categoria": "chat", "cor": "#10A37F",
+      "site": "https://chatgpt.com", "pacote": "com.openai.chatgpt",
+      "resumo": "O assistente de IA mais conhecido. Conversa, escreve, resume, traduz, analisa arquivos e fotos, cria imagens e fala por voz.",
+      "comoUsar": ["Baixe o app ChatGPT na Play Store ou acesse chatgpt.com", "Entre com sua conta Google, Microsoft ou e-mail", "Escreva o que precisa como se falasse com uma pessoa", "Use o clipe para enviar fotos, PDFs e planilhas", "Toque no ícone de voz para conversar falando"],
+      "fortes": ["Muito versátil, faz de tudo um pouco", "Cria imagens dentro da conversa", "Modo de voz muito natural", "Plano Go cobrado em reais"],
+      "limites": ["Plano grátis tem limite de uso dos modelos mais fortes", "Pode inventar informações: confira dados importantes"],
+      "tags": ["texto", "trabalho", "estudo", "imagem", "voz", "iniciante"],
+      "planos": [
+        {"nome": "Grátis", "brl": 0},
+        {"nome": "Go", "brl": 39.99, "usd": 8, "obs": "Mais uso que o grátis, preço em reais"},
+        {"nome": "Plus", "brl": 99.90, "usd": 20, "obs": "Modelos mais avançados, Sora e Codex"},
+        {"nome": "Pro", "brl": 525, "usd": 100, "obs": "Uso intenso; há níveis de US$ 200 e US$ 500"}
+      ],
+      "prompts": ["Explique [assunto] como se eu tivesse 12 anos, com um exemplo do dia a dia.", "Revise este texto, corrija erros e deixe mais claro, sem mudar o meu jeito de escrever: [texto]", "Monte um roteiro de 3 dias em [cidade] para uma família, com custos aproximados."]
+    },
+    {
+      "id": "gemini", "nome": "Gemini", "empresa": "Google", "categoria": "chat", "cor": "#4285F4",
+      "site": "https://gemini.google.com", "pacote": "com.google.android.apps.bard",
+      "resumo": "A IA do Google, integrada ao Android, Gmail, Drive, YouTube e Maps. Já vem no Galaxy e pode substituir o Google Assistente.",
+      "comoUsar": ["No Android, segure o botão lateral ou diga 'Ok Google'", "Ou abra o app Gemini / gemini.google.com", "Peça coisas ligadas ao Google: 'resuma meus e-mails de hoje'", "Use o Gemini Live para conversar por voz ou mostrar a câmera"],
+      "fortes": ["Integração total com serviços Google", "Gemini Live com câmera e tela", "Planos pagos incluem armazenamento no Google One", "Gera vídeos com Veo nos planos pagos"],
+      "limites": ["Recursos mais novos chegam antes em inglês", "Planos Ultra são caros"],
+      "tags": ["texto", "trabalho", "estudo", "google", "voz", "imagem", "video", "iniciante"],
+      "planos": [
+        {"nome": "Grátis", "brl": 0},
+        {"nome": "Google AI Plus", "brl": 24.99, "obs": "Mais uso do Gemini e armazenamento"},
+        {"nome": "Google AI Pro", "brl": 96.99, "usd": 19.99, "obs": "Modelo Pro, Veo, NotebookLM ampliado e 2 TB"},
+        {"nome": "Google AI Ultra", "brl": 779.90, "usd": 100, "obs": "Nível 5x; o 20x custa R$ 999,90"}
+      ],
+      "prompts": ["Resuma os e-mails importantes que recebi hoje no Gmail.", "Olhe esta foto pela câmera e me diga como consertar isso.", "Crie uma planilha no Google Sheets para controlar gastos da casa."]
+    },
+    {
+      "id": "claude", "nome": "Claude", "empresa": "Anthropic", "categoria": "chat", "cor": "#D97757",
+      "site": "https://claude.ai", "pacote": "com.anthropic.claude",
+      "resumo": "Assistente conhecido pela escrita natural, pela análise de documentos longos e pela programação. Cria documentos, apresentações e pequenos apps.",
+      "comoUsar": ["Baixe o app Claude ou acesse claude.ai", "Crie conta com Google ou e-mail", "Envie PDFs, planilhas e imagens para ele analisar", "Peça documentos, apresentações ou páginas interativas"],
+      "fortes": ["Textos com tom natural", "Ótimo com documentos grandes", "Forte em programação (Claude Code)", "Pode trabalhar com arquivos e apps do seu computador"],
+      "limites": ["Plano grátis tem limite de mensagens", "Não gera imagens como o ChatGPT"],
+      "tags": ["texto", "trabalho", "estudo", "codigo", "avancado"],
+      "planos": [
+        {"nome": "Grátis", "brl": 0},
+        {"nome": "Pro", "brl": 110, "usd": 20, "obs": "R$ 92/mês no plano anual; inclui Claude Code"},
+        {"nome": "Max", "brl": 550, "usd": 100, "obs": "5x ou 20x mais uso que o Pro"}
+      ],
+      "prompts": ["Leia este contrato e liste os pontos de atenção em linguagem simples.", "Transforme estas anotações em um documento organizado com títulos: [anotações]", "Me ajude a escrever um e-mail educado, mas firme, cobrando [assunto]."]
+    },
+    {
+      "id": "copilot", "nome": "Microsoft Copilot", "empresa": "Microsoft", "categoria": "chat", "cor": "#0078D4",
+      "site": "https://copilot.microsoft.com", "pacote": "com.microsoft.copilot",
+      "resumo": "A IA da Microsoft, grátis no app e no Windows. No plano pago, funciona dentro do Word, Excel, PowerPoint e Outlook.",
+      "comoUsar": ["Use o app Copilot ou a tecla Copilot no Windows", "Para Office, assine o Microsoft 365 Premium", "No Word/Excel, clique no botão Copilot e peça a tarefa"],
+      "fortes": ["Grátis e sem limite rígido para o básico", "Integração com Word, Excel e PowerPoint", "Premium inclui Office completo e 1 TB+"],
+      "limites": ["O melhor do Copilot exige o plano pago do Microsoft 365"],
+      "tags": ["texto", "trabalho", "microsoft", "iniciante"],
+      "planos": [
+        {"nome": "Grátis", "brl": 0},
+        {"nome": "Microsoft 365 Premium", "usd": 19.99, "obs": "Office + Copilot nos apps; substituiu o Copilot Pro"}
+      ],
+      "prompts": ["No Excel: crie uma fórmula que some as vendas por mês desta tabela.", "No PowerPoint: transforme este documento do Word em 8 slides.", "Resuma esta reunião do Teams e liste quem ficou com cada tarefa."]
+    },
+    {
+      "id": "grok", "nome": "Grok", "empresa": "xAI", "categoria": "chat", "cor": "#1F1F1F",
+      "site": "https://grok.com", "pacote": "ai.x.grok",
+      "resumo": "A IA da xAI, integrada ao X (Twitter). Acompanha assuntos em alta no X em tempo real e tem um tom mais solto.",
+      "comoUsar": ["Use o app Grok, grok.com ou o botão Grok dentro do X", "Pergunte sobre notícias e assuntos do momento"],
+      "fortes": ["Acesso ao que está bombando no X", "Gera imagens e vídeos curtos"],
+      "limites": ["Respostas podem ser menos cuidadosas", "Planos mudam com frequência"],
+      "tags": ["texto", "noticias", "imagem"],
+      "planos": [
+        {"nome": "Grátis", "brl": 0},
+        {"nome": "SuperGrok", "usd": 30, "obs": "Há versão Lite (~US$ 10) em alguns países"},
+        {"nome": "SuperGrok Heavy", "usd": 300}
+      ],
+      "prompts": ["O que as pessoas estão comentando no X sobre [assunto] hoje?", "Resuma os dois lados dessa discussão de forma neutra."]
+    },
+    {
+      "id": "deepseek", "nome": "DeepSeek", "empresa": "DeepSeek (China)", "categoria": "chat", "cor": "#4D6BFE",
+      "site": "https://chat.deepseek.com", "pacote": "com.deepseek.chat",
+      "resumo": "Assistente chinês gratuito, forte em raciocínio, matemática e código. Ficou famoso por ser bom e grátis.",
+      "comoUsar": ["Baixe o app DeepSeek ou acesse chat.deepseek.com", "Ative o modo de raciocínio (DeepThink) para problemas difíceis"],
+      "fortes": ["Totalmente grátis no app", "Bom em matemática e lógica"],
+      "limites": ["Dados ficam em servidores na China", "Sem geração de imagens", "Evita alguns temas políticos"],
+      "tags": ["texto", "estudo", "codigo", "gratis"],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "A API para desenvolvedores é paga por uso"}],
+      "prompts": ["Resolva este problema de matemática passo a passo: [problema]", "Explique o erro neste código e mostre a correção: [código]"]
+    },
+    {
+      "id": "metaai", "nome": "Meta AI", "empresa": "Meta", "categoria": "chat", "cor": "#0866FF",
+      "site": "https://www.meta.ai", "pacote": "com.whatsapp",
+      "resumo": "A IA que já está dentro do WhatsApp, Instagram e Facebook. Basta tocar no círculo azul e conversar.",
+      "comoUsar": ["No WhatsApp, toque no círculo azul/colorido na aba de conversas", "Ou escreva @Meta AI dentro de um grupo", "Peça respostas rápidas, ideias ou imagens"],
+      "fortes": ["Grátis e já instalado no WhatsApp", "Cria imagens rapidamente"],
+      "limites": ["Menos completo que ChatGPT, Gemini ou Claude", "Conversas podem ser usadas pela Meta"],
+      "tags": ["texto", "imagem", "gratis", "iniciante"],
+      "planos": [{"nome": "Grátis", "brl": 0}],
+      "prompts": ["@Meta AI sugira um nome para o nosso grupo da viagem.", "Crie uma imagem de um gato astronauta em estilo aquarela."]
+    },
+    {
+      "id": "lechat", "nome": "Le Chat", "empresa": "Mistral AI (França)", "categoria": "chat", "cor": "#FA520F",
+      "site": "https://chat.mistral.ai", "pacote": "ai.mistral.chat",
+      "resumo": "Assistente europeu da Mistral. Muito rápido, com foco em privacidade e regras europeias.",
+      "comoUsar": ["Baixe o app Le Chat ou acesse chat.mistral.ai", "Use como um assistente de conversa comum"],
+      "fortes": ["Respostas muito rápidas", "Empresa europeia (GDPR)"],
+      "limites": ["Menos recursos que os líderes", "Menos conhecido no Brasil"],
+      "tags": ["texto", "trabalho"],
+      "planos": [{"nome": "Grátis", "brl": 0}, {"nome": "Pro", "usd": 14.99}],
+      "prompts": ["Traduza este texto para o inglês formal: [texto]"]
+    },
+    {
+      "id": "perplexity", "nome": "Perplexity", "empresa": "Perplexity AI", "categoria": "pesquisa", "cor": "#20808D",
+      "site": "https://www.perplexity.ai", "pacote": "ai.perplexity.app.android",
+      "resumo": "Um 'Google com IA': pesquisa na internet e responde com as fontes numeradas, para você conferir tudo.",
+      "comoUsar": ["Baixe o app Perplexity ou acesse perplexity.ai", "Faça a pergunta como no Google", "Toque nos números para abrir as fontes"],
+      "fortes": ["Sempre mostra as fontes", "Ótimo para comparar produtos e notícias", "Navegador Comet com IA"],
+      "limites": ["Menos criativo para textos longos"],
+      "tags": ["pesquisa", "estudo", "noticias", "compras", "iniciante"],
+      "planos": [{"nome": "Grátis", "brl": 0}, {"nome": "Pro", "usd": 20}, {"nome": "Max", "usd": 200}],
+      "prompts": ["Compare os 3 melhores fones até R$ 500 em 2026, com fontes.", "Quais as últimas notícias sobre [assunto]? Cite as fontes."]
+    },
+    {
+      "id": "notebooklm", "nome": "NotebookLM", "empresa": "Google", "categoria": "pesquisa", "cor": "#1A73E8",
+      "site": "https://notebooklm.google.com", "pacote": "com.google.android.apps.labs.language.tailwind",
+      "resumo": "Você envia seus PDFs, vídeos e anotações e ele vira um especialista neles: responde perguntas, faz resumos e até um 'podcast' em português.",
+      "comoUsar": ["Acesse notebooklm.google.com ou baixe o app", "Crie um caderno e adicione fontes (PDF, links, YouTube)", "Pergunte sobre o conteúdo ou gere um Resumo em Áudio"],
+      "fortes": ["Responde só com base nas suas fontes", "Resumos em áudio no estilo podcast", "Ótimo para estudar"],
+      "limites": ["Não pesquisa fora do que você enviou"],
+      "tags": ["estudo", "pesquisa", "leitura", "gratis", "google"],
+      "planos": [{"nome": "Grátis", "brl": 0}, {"nome": "Incluso no Google AI Pro", "brl": 96.99, "obs": "Mais cadernos e fontes"}],
+      "prompts": ["Faça um resumo de 1 página destes documentos.", "Crie 10 perguntas de prova sobre este material, com respostas."]
+    },
+    {
+      "id": "midjourney", "nome": "Midjourney", "empresa": "Midjourney", "categoria": "imagem", "cor": "#000000",
+      "site": "https://www.midjourney.com",
+      "resumo": "Referência em imagens artísticas de altíssima qualidade. Também anima imagens em vídeos curtos.",
+      "comoUsar": ["Acesse midjourney.com e entre com Google ou Discord", "Assine um plano (não há grátis)", "Descreva a imagem em inglês para melhores resultados"],
+      "fortes": ["Estética mais bonita do mercado", "Estilos artísticos variados"],
+      "limites": ["Sem plano grátis", "Sem app oficial para Android"],
+      "tags": ["imagem", "arte", "avancado"],
+      "planos": [{"nome": "Basic", "usd": 10}, {"nome": "Standard", "usd": 30}, {"nome": "Pro", "usd": 60}, {"nome": "Mega", "usd": 120}],
+      "prompts": ["a cozy reading nook with a Kindle and fountain pen, warm light, cinematic --ar 9:16", "futuristic São Paulo skyline at dusk, neon, ultra detailed"]
+    },
+    {
+      "id": "leonardo", "nome": "Leonardo.Ai", "empresa": "Canva", "categoria": "imagem", "cor": "#7B4BFF",
+      "site": "https://leonardo.ai",
+      "resumo": "Gerador de imagens com muitos estilos prontos, bom para papéis de parede, personagens e artes para jogos.",
+      "comoUsar": ["Acesse leonardo.ai ou use o app", "Escolha um modelo/estilo e descreva a imagem", "Use tokens grátis diários"],
+      "fortes": ["Tokens grátis todo dia", "Muitos estilos e controles"],
+      "limites": ["Sistema de tokens confunde no início"],
+      "tags": ["imagem", "arte", "gratis"],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "150 tokens/dia"}, {"nome": "Essential", "usd": 12}, {"nome": "Premium", "usd": 30}, {"nome": "Ultimate", "usd": 60}],
+      "prompts": ["Papel de parede minimalista em tons de cinza para tela e-ink, 9:16."]
+    },
+    {
+      "id": "ideogram", "nome": "Ideogram", "empresa": "Ideogram", "categoria": "imagem", "cor": "#111111",
+      "site": "https://ideogram.ai",
+      "resumo": "Especialista em imagens com TEXTO legível: logos, cartazes, convites e camisetas.",
+      "comoUsar": ["Acesse ideogram.ai", "Escreva o texto entre aspas no pedido", "Escolha a proporção e gere"],
+      "fortes": ["Escreve textos certinhos nas imagens", "Bom para logos e cartazes"],
+      "limites": ["Grátis com poucos pedidos por dia", "Preços variam: confira no site"],
+      "tags": ["imagem", "design", "gratis"],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "Poucos pedidos por dia"}, {"nome": "Basic", "usd": 7, "obs": "Planos maiores a partir de ~US$ 16"}],
+      "prompts": ["Convite de aniversário com o texto \"Festa do Pedro - 10 anos\", estilo festa junina."]
+    },
+    {
+      "id": "firefly", "nome": "Adobe Firefly", "empresa": "Adobe", "categoria": "imagem", "cor": "#EB1000",
+      "site": "https://firefly.adobe.com", "pacote": "com.adobe.firefly",
+      "resumo": "A IA da Adobe para imagens e vídeos, treinada com conteúdo licenciado: mais segura para uso comercial.",
+      "comoUsar": ["Acesse firefly.adobe.com ou o app Firefly", "Gere imagens ou use o Preenchimento Generativo"],
+      "fortes": ["Seguro para uso comercial", "Integra com Photoshop"],
+      "limites": ["Sistema de créditos", "Menos criativo que o Midjourney"],
+      "tags": ["imagem", "design", "trabalho", "video"],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "Gerações diárias limitadas"}, {"nome": "Standard", "usd": 9.99}, {"nome": "Pro", "usd": 19.99}, {"nome": "Premium", "usd": 199.99}],
+      "prompts": ["Remova o fundo desta foto e coloque uma praia ao pôr do sol."]
+    },
+    {
+      "id": "canva", "nome": "Canva IA", "empresa": "Canva", "categoria": "imagem", "cor": "#00C4CC",
+      "site": "https://www.canva.com", "pacote": "com.canva.editor",
+      "resumo": "O Canva tem IA para criar posts, apresentações, remover fundo e gerar imagens a partir de texto.",
+      "comoUsar": ["Abra o app Canva", "Use 'Canva IA' e descreva o que quer criar", "Ajuste o resultado no editor"],
+      "fortes": ["Muito fácil de usar", "Modelos prontos para redes sociais"],
+      "limites": ["Melhores recursos exigem o Pro"],
+      "tags": ["imagem", "design", "trabalho", "iniciante"],
+      "planos": [{"nome": "Grátis", "brl": 0}, {"nome": "Pro", "usd": 18, "obs": "US$ 15/mês no anual; no Brasil o preço sai em reais no app"}],
+      "prompts": ["Crie 5 posts para Instagram divulgando uma cafeteria, estilo moderno."]
+    },
+    {
+      "id": "runway", "nome": "Runway", "empresa": "Runway", "categoria": "video", "cor": "#00B37E",
+      "site": "https://runwayml.com",
+      "resumo": "Ferramenta profissional de vídeo com IA: cria cenas a partir de texto ou imagem e edita vídeos.",
+      "comoUsar": ["Acesse runwayml.com", "Escolha Texto→Vídeo ou Imagem→Vídeo", "Descreva a cena e o movimento da câmera"],
+      "fortes": ["Muito usado por cineastas", "Ferramentas de edição completas"],
+      "limites": ["Grátis só tem 125 créditos únicos", "Vídeos gastam créditos rápido"],
+      "tags": ["video", "avancado", "trabalho"],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "125 créditos uma vez"}, {"nome": "Standard", "usd": 15}, {"nome": "Pro", "usd": 35}, {"nome": "Max", "usd": 95}],
+      "prompts": ["Câmera lenta se aproximando de uma xícara de café fumegante numa mesa de madeira."]
+    },
+    {
+      "id": "kling", "nome": "Kling AI", "empresa": "Kuaishou (China)", "categoria": "video", "cor": "#00D1B2",
+      "site": "https://klingai.com",
+      "resumo": "Gerador de vídeos realistas a partir de texto ou foto. Bom custo-benefício.",
+      "comoUsar": ["Acesse klingai.com ou o app", "Envie uma foto e descreva o movimento"],
+      "fortes": ["Vídeos realistas", "Planos baratos"],
+      "limites": ["Fila de espera no plano grátis", "Créditos grátis podem mudar"],
+      "tags": ["video"],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "Créditos limitados (verifique)"}, {"nome": "Standard", "usd": 10}, {"nome": "Pro", "usd": 37}, {"nome": "Premier", "usd": 182}],
+      "prompts": ["Anime esta foto antiga da família, com as pessoas sorrindo e acenando."]
+    },
+    {
+      "id": "sora", "nome": "Sora", "empresa": "OpenAI", "categoria": "video", "cor": "#10A37F",
+      "site": "https://sora.com",
+      "resumo": "Gerador de vídeos da OpenAI, com áudio. Vem incluído nos planos pagos do ChatGPT.",
+      "comoUsar": ["Acesse sora.com com sua conta do ChatGPT", "Descreva a cena", "A disponibilidade do app varia por país"],
+      "fortes": ["Vídeos com som", "Incluso no ChatGPT Plus/Pro"],
+      "limites": ["Uso limitado no Plus"],
+      "tags": ["video"],
+      "planos": [{"nome": "Incluso no ChatGPT Plus", "brl": 99.90}, {"nome": "Incluso no ChatGPT Pro", "brl": 525}],
+      "prompts": ["Um cachorro surfando uma onda em Ubatuba, estilo documentário."]
+    },
+    {
+      "id": "veo", "nome": "Google Veo (Flow)", "empresa": "Google", "categoria": "video", "cor": "#34A853",
+      "site": "https://labs.google/flow",
+      "resumo": "Modelo de vídeo do Google, com áudio. Usado no app Gemini e no Flow, para criar cenas de filme.",
+      "comoUsar": ["No app Gemini, escolha 'Vídeo' e descreva", "Ou use o Flow (labs.google/flow) para montar cenas"],
+      "fortes": ["Vídeos com som e diálogos", "Incluso nos planos Google AI"],
+      "limites": ["Poucos vídeos por dia nos planos menores"],
+      "tags": ["video", "google"],
+      "planos": [{"nome": "Incluso no Google AI Pro", "brl": 96.99}, {"nome": "Incluso no Google AI Ultra", "brl": 779.90}],
+      "prompts": ["Um senhor contando uma história engraçada num bar de São Paulo, câmera na mão."]
+    },
+    {
+      "id": "suno", "nome": "Suno", "empresa": "Suno", "categoria": "audio", "cor": "#F5A623",
+      "site": "https://suno.com", "pacote": "com.suno.android",
+      "resumo": "Cria músicas completas, com letra e voz, a partir de uma frase. Funciona em português.",
+      "comoUsar": ["Baixe o app Suno ou acesse suno.com", "Descreva o estilo e o tema", "Ou escreva sua própria letra"],
+      "fortes": ["Músicas surpreendentemente boas", "Canta em português"],
+      "limites": ["No grátis, músicas não podem ser usadas comercialmente"],
+      "tags": ["musica", "audio", "gratis", "diversao"],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "~10 músicas/dia"}, {"nome": "Pro", "usd": 10}, {"nome": "Premier", "usd": 30}],
+      "prompts": ["Samba animado de aniversário para a Ana, que adora viajar e tomar café."]
+    },
+    {
+      "id": "elevenlabs", "nome": "ElevenLabs", "empresa": "ElevenLabs", "categoria": "audio", "cor": "#000000",
+      "site": "https://elevenlabs.io", "pacote": "io.elevenlabs.readerapp",
+      "resumo": "As vozes de IA mais realistas: narração, dublagem, clonagem da própria voz e leitura de textos.",
+      "comoUsar": ["Acesse elevenlabs.io ou o app ElevenReader", "Cole o texto e escolha a voz", "Baixe o áudio"],
+      "fortes": ["Vozes muito naturais em português", "App ElevenReader lê PDFs e e-books em voz alta"],
+      "limites": ["Grátis exige atribuição e não clona voz"],
+      "tags": ["voz", "audio", "leitura", "trabalho"],
+      "planos": [{"nome": "Grátis", "brl": 0}, {"nome": "Starter", "usd": 6}, {"nome": "Creator", "usd": 22}, {"nome": "Pro", "usd": 99}],
+      "prompts": ["Narre este texto com voz calma, para um vídeo do YouTube: [texto]"]
+    },
+    {
+      "id": "githubcopilot", "nome": "GitHub Copilot", "empresa": "GitHub / Microsoft", "categoria": "codigo", "cor": "#6E40C9",
+      "site": "https://github.com/features/copilot",
+      "resumo": "Assistente de programação dentro do VS Code e outros editores: completa código, explica e corrige.",
+      "comoUsar": ["Instale a extensão no VS Code ou Android Studio", "Entre com sua conta GitHub", "Converse no painel ou aceite sugestões com Tab"],
+      "fortes": ["Plano grátis generoso", "Funciona em vários editores"],
+      "limites": ["Precisa saber o básico de programação"],
+      "tags": ["codigo", "gratis"],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "2.000 sugestões/mês"}, {"nome": "Pro", "usd": 10}, {"nome": "Pro+", "usd": 39}],
+      "prompts": ["Explique o que esta função faz e escreva testes para ela."]
+    },
+    {
+      "id": "cursor", "nome": "Cursor", "empresa": "Anysphere", "categoria": "codigo", "cor": "#111111",
+      "site": "https://cursor.com",
+      "resumo": "Editor de código com IA embutida, capaz de alterar vários arquivos do projeto de uma vez.",
+      "comoUsar": ["Baixe o Cursor para Windows/Mac", "Abra a pasta do projeto", "Peça mudanças no painel de agente"],
+      "fortes": ["Agente que mexe no projeto inteiro", "Usa modelos da OpenAI, Anthropic e Google"],
+      "limites": ["Só para computador"],
+      "tags": ["codigo", "avancado"],
+      "planos": [{"nome": "Hobby", "brl": 0}, {"nome": "Pro", "usd": 20}, {"nome": "Pro+", "usd": 60}, {"nome": "Ultra", "usd": 200}],
+      "prompts": ["Adicione um modo escuro neste app e atualize todas as telas."]
+    },
+    {
+      "id": "claudecode", "nome": "Claude Code", "empresa": "Anthropic", "categoria": "codigo", "cor": "#D97757",
+      "site": "https://claude.com/claude-code",
+      "resumo": "Agente de programação da Anthropic: lê o projeto, escreve código, roda testes e compila sozinho.",
+      "comoUsar": ["Use no terminal, no VS Code, no app desktop ou na web", "Entre com a conta Claude Pro ou Max", "Descreva a tarefa e acompanhe"],
+      "fortes": ["Trabalha em tarefas longas sozinho", "Incluso nos planos Claude"],
+      "limites": ["Não existe no plano grátis"],
+      "tags": ["codigo", "avancado"],
+      "planos": [{"nome": "Incluso no Claude Pro", "brl": 110}, {"nome": "Incluso no Claude Max", "brl": 550}],
+      "prompts": ["Crie um app Android que mostre a cotação do dólar e compile o APK."]
+    },
+    {
+      "id": "codex", "nome": "OpenAI Codex", "empresa": "OpenAI", "categoria": "codigo", "cor": "#10A37F",
+      "site": "https://chatgpt.com/codex",
+      "resumo": "Agente de programação da OpenAI, incluído no ChatGPT. Trabalha no seu repositório e abre alterações para revisão.",
+      "comoUsar": ["Acesse pelo ChatGPT, terminal ou VS Code", "Conecte seu GitHub", "Peça a tarefa e revise as mudanças"],
+      "fortes": ["Incluso no ChatGPT Plus", "Roda várias tarefas em paralelo"],
+      "limites": ["Uso limitado nos planos menores"],
+      "tags": ["codigo", "avancado"],
+      "planos": [{"nome": "Incluso no ChatGPT Plus", "brl": 99.90}, {"nome": "Incluso no ChatGPT Pro", "brl": 525}],
+      "prompts": ["Corrija o bug do login descrito nesta issue e escreva um teste."]
+    }
+  ]
+}
