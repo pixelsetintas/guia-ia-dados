@@ -1,9 +1,9 @@
 {
   "versao": 1,
-  "atualizado": "2026-11-01",
-  "cotacaoReserva": 5.44,
+  "atualizado": "2026-11-02",
+  "cotacaoReserva": 5.42,
   "iof": 0.035,
-  "aviso": "Preços conferidos em 01/11/2026 em páginas oficiais e guias de preços. Valores em US$ são convertidos pela cotação do dia + IOF de 3,5% (cartão internacional). Confirme no site oficial antes de assinar.",
+  "aviso": "Preços conferidos em 02/11/2026 em páginas oficiais e guias de preços. Valores em US$ são convertidos pela cotação do dia + IOF de 3,5% (cartão internacional). Confirme no site oficial antes de assinar.",
   "categorias": [
     {"id": "chat", "nome": "Assistentes de conversa", "icone": "💬"},
     {"id": "pesquisa", "nome": "Pesquisa e estudo", "icone": "🔎"},
@@ -218,7 +218,7 @@
       "fortes": ["Vídeos realistas", "Planos baratos"],
       "limites": ["Fila de espera no plano grátis", "Créditos grátis podem mudar"],
       "tags": ["video"],
-      "planos": [{"nome": "Grátis", "brl": 0, "obs": "Créditos limitados (verifique)"}, {"nome": "Standard", "usd": 10}, {"nome": "Pro", "usd": 37}, {"nome": "Premier", "usd": 182, "obs": "Fontes divergem entre US$ 92 e US$ 182 (verifique)"}],
+      "planos": [{"nome": "Grátis", "brl": 0, "obs": "66 créditos por dia, que expiram em 24 horas"}, {"nome": "Standard", "usd": 10, "obs": "660 créditos/mês"}, {"nome": "Pro", "usd": 37, "obs": "3.000 créditos/mês"}, {"nome": "Premier", "usd": 92, "obs": "8.000 créditos/mês; US$ 60,72/mês no plano anual"}, {"nome": "Ultra", "usd": 180, "obs": "26.000 créditos/mês; só no plano mensal"}],
       "prompts": ["Anime esta foto antiga da família, com as pessoas sorrindo e acenando."]
     },
     {
