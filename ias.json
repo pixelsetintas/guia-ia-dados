@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado": "2026-11-02",
+  "atualizado": "2026-11-04",
   "cotacaoReserva": 5.42,
   "iof": 0.035,
   "aviso": "Preços conferidos em 02/11/2026 em páginas oficiais e guias de preços. Valores em US$ são convertidos pela cotação do dia + IOF de 3,5% (cartão internacional). Confirme no site oficial antes de assinar.",
@@ -24,7 +24,7 @@
       "planos": [
         {"nome": "Grátis", "brl": 0},
         {"nome": "Go", "brl": 39.99, "usd": 8, "obs": "Mais uso que o grátis, preço em reais"},
-        {"nome": "Plus", "brl": 99.90, "usd": 20, "obs": "Modelos mais avançados, Sora e Codex"},
+        {"nome": "Plus", "brl": 99.90, "usd": 20, "obs": "Modelos mais avançados e Codex"},
         {"nome": "Pro", "brl": 525, "usd": 100, "obs": "Uso intenso; há níveis de US$ 200 e US$ 500"}
       ],
       "prompts": ["Explique [assunto] como se eu tivesse 12 anos, com um exemplo do dia a dia.", "Revise este texto, corrija erros e deixe mais claro, sem mudar o meu jeito de escrever: [texto]", "Monte um roteiro de 3 dias em [cidade] para uma família, com custos aproximados."]
@@ -220,17 +220,6 @@
       "tags": ["video"],
       "planos": [{"nome": "Grátis", "brl": 0, "obs": "66 créditos por dia, que expiram em 24 horas"}, {"nome": "Standard", "usd": 10, "obs": "660 créditos/mês"}, {"nome": "Pro", "usd": 37, "obs": "3.000 créditos/mês"}, {"nome": "Premier", "usd": 92, "obs": "8.000 créditos/mês; US$ 60,72/mês no plano anual"}, {"nome": "Ultra", "usd": 180, "obs": "26.000 créditos/mês; só no plano mensal"}],
       "prompts": ["Anime esta foto antiga da família, com as pessoas sorrindo e acenando."]
-    },
-    {
-      "id": "sora", "nome": "Sora", "empresa": "OpenAI", "categoria": "video", "cor": "#10A37F",
-      "site": "https://sora.com",
-      "resumo": "Gerador de vídeos da OpenAI, com áudio. Vem incluído nos planos pagos do ChatGPT.",
-      "comoUsar": ["Acesse sora.com com sua conta do ChatGPT", "Descreva a cena", "A disponibilidade do app varia por país"],
-      "fortes": ["Vídeos com som", "Incluso no ChatGPT Plus/Pro"],
-      "limites": ["Uso limitado no Plus"],
-      "tags": ["video"],
-      "planos": [{"nome": "Incluso no ChatGPT Plus", "brl": 99.90}, {"nome": "Incluso no ChatGPT Pro", "brl": 525}],
-      "prompts": ["Um cachorro surfando uma onda em Ubatuba, estilo documentário."]
     },
     {
       "id": "veo", "nome": "Google Veo (Flow)", "empresa": "Google", "categoria": "video", "cor": "#34A853",
