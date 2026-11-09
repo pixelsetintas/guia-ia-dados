@@ -1,9 +1,9 @@
 {
   "versao": 1,
-  "atualizado": "2026-11-04",
-  "cotacaoReserva": 5.44,
+  "atualizado": "2026-11-09",
+  "cotacaoReserva": 5.52,
   "iof": 0.035,
-  "aviso": "Preços conferidos em 02/11/2026 em páginas oficiais e guias de preços. Valores em US$ são convertidos pela cotação do dia + IOF de 3,5% (cartão internacional). Confirme no site oficial antes de assinar.",
+  "aviso": "Preços conferidos em 09/11/2026 em páginas oficiais e guias de preços. Valores em US$ são convertidos pela cotação do dia + IOF de 3,5% (cartão internacional). Confirme no site oficial antes de assinar.",
   "categorias": [
     {
       "id": "chat",
@@ -218,7 +218,12 @@
           "nome": "Max",
           "brl": 550,
           "usd": 100,
-          "obs": "5x ou 20x mais uso que o Pro"
+          "obs": "5x o uso do Pro; inclui US$ 100/mês em créditos de API"
+        },
+        {
+          "nome": "Ultra",
+          "usd": 200,
+          "obs": "Antigo Max 20x: 10x o uso semanal do Pro e sem limite de 5 horas em contas verificadas; preço em R$ (verifique)"
         }
       ],
       "prompts": [
@@ -1140,7 +1145,7 @@
       "resumo": "Agente de programação da Anthropic: lê o projeto, escreve código, roda testes e compila sozinho.",
       "comoUsar": [
         "Use no terminal, no VS Code, no app desktop ou na web",
-        "Entre com a conta Claude Pro ou Max",
+        "Entre com a conta Claude Pro, Max ou Ultra",
         "Descreva a tarefa e acompanhe"
       ],
       "fortes": [
@@ -1162,6 +1167,10 @@
         {
           "nome": "Incluso no Claude Max",
           "brl": 550
+        },
+        {
+          "nome": "Incluso no Claude Ultra",
+          "usd": 200
         }
       ],
       "prompts": [
